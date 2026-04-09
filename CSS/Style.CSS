@@ -184,10 +184,10 @@ section h2::after{
 }
 
 .Compétences table tbody tr:hover{
-    background-color: #f0f0f0;
+    background-color: #F0F0F0;
 }
 
-.Compétences table thead tr{
+.Compétences table thead th{
     text-align: left;
 }
 
