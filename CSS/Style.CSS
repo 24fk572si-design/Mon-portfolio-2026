@@ -217,3 +217,411 @@ footer a:hover{
     transform: translate(-3px);
 }
     
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/* Alignement des infos du haut */
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    color: var(--gris-fonce);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.detail-item i {
+    color: var(--violet-doux);
+}
+
+/* Boutons WhatsApp & Telegram */
+.messagerie-directe {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 3.5rem;
+}
+
+.msg-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 50px; /* Aligné sur ton style de bouton */
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+.msg-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* Style du formulaire */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: inherit;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--violet-doux);
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.1);
+}
+
+.contact-form .submit-btn {
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
+
+/* Section Réseaux Sociaux */
+.suivez-moi h3 {
+    color: var(--gris-tres-fonce);
+    margin-bottom: 1.5rem;
+}
+
+.social-links-contact {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links-contact a {
+    font-size: 2.2rem;
+    color: var(--violet-doux);
+    transition: 0.3s ease;
+}
+
+.social-links-contact a:hover {
+    color: var(--orange-vif);
+    transform: scale(1.2);
+}
+
+/* Style spécifique à la page Divertissement */
+.divertissement-section {
+    max-width: 1000px;
+    margin: 6rem auto;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.intro-text {
+    color: var(--gris-fonce);
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.hobby-card {
+    background: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(108, 99, 255, 0.15);
+    border-color: var(--violet-doux);
+}
+
+.hobby-icon {
+    font-size: 3rem;
+    color: var(--violet-doux);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover .hobby-icon {
+    transform: scale(1.1) rotate(5deg);
+    color: var(--orange-vif); /* Petit rappel de ta couleur d'accent */
+}
+
+.hobby-card h3 {
+    color: var(--gris-tres-fonce);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.hobby-card p {
+    color: var(--gris-fonce);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Titre h1 de la page (si tu veux le garder stylisé) */
+main h1 {
+    color: var(--violet-doux);
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.passions-section {
+    max-width: 1100px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.intro-p {
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+
+.passions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.passion-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: transform 0.4s ease;
+}
+
+.passion-item:nth-child(even) {
+    flex-direction: row-reverse; /* Alterne l'ordre image/texte */
+}
+
+.passion-item:hover {
+    transform: scale(1.02);
+}
+
+.passion-image {
+    flex: 1;
+    background: var(--violet-doux);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+}
+
+.passion-content {
+    flex: 1.5;
+    padding: 3rem;
+    text-align: left;
+}
+
+.passion-content h3 {
+    color: var(--violet-doux);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.passion-content p {
+    color: var(--gris-fonce);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Version Mobile */
+@media (max-width: 768px) {
+    .passion-item, .passion-item:nth-child(even) {
+        flex-direction: column;
+    }
+    
+    .passion-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .passion-content {
+        padding: 2rem;
+    }
+}
+
+.projects-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.projects-section h1 {
+    color: var(--violet-doux);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 60px;
+    height: 4px;
+    background: var(--violet-doux);
+    margin: 0 auto 3rem;
+    border-radius: 2px;
+}
+
+/* La Grille 3x3 */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 2rem; /* Espace entre les cartes */
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Évite de déformer tes images */
+}
+
+.card-content {
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    color: var(--gris-tres-fonce);
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Les petits badges (Tags) */
+.tags {
+    margin-bottom: 1.5rem;
+}
+
+.tags span {
+    background: var(--gris-tres-clair);
+    color: var(--violet-doux);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Les liens en bas de carte */
+.links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--gris-clair);
+    padding-top: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--gris-fonce);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: var(--violet-doux);
+}
+
+/* Responsive : passe à 2 colonnes puis 1 sur mobile */
+@media (max-width: 992px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .projects-grid { grid-template-columns: 1fr; }
+}
